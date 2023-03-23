@@ -1,0 +1,76 @@
+﻿@model Reto.Web.Models.CitaVM
+<div class="row justify-content-md-center">
+	<div class="col-md-auto">
+		<h2>Agregar Cita</h2>
+		<form asp-action="Crear" asp-controller="Cita" method="POST">
+			<div class="mb-3">
+			<label>Fecha</label><br />
+			<input type="date" name="Fecha" required asp-for="Fecha" class="form-control">
+			@Html.ValidationMessageFor(x => x.Fecha, "", new { @class = "text-danger" })
+			</div>
+			<div class="mb-3">
+				@Html.LabelFor(x => x.IdVehiculo)
+				@Html.DropDownListFor(x=>x.IdVehiculo,
+			(IEnumerable<SelectListItem>)ViewBag.GeneraListaPlacas,
+			"Seleccione la Placa", new { @class = "form-control"})
+				@Html.ValidationMessageFor(x => x.IdVehiculo, "", new { @class = "text-danger" })
+			</div>
+			<div class="mb-3">
+				@Html.LabelFor(x => x.Hora)
+				@Html.DropDownListFor(x=>x.Hora,
+			(IEnumerable<SelectListItem>)ViewBag.GeneraListaHoras,
+			"Seleccione la Hora", new { @class = "form-control" })
+				@Html.ValidationMessageFor(x => x.Hora, "", new { @class = "text-danger" })
+			</div>
+			<div class="card-footer">
+					<input type="submit" value="Guardar" class="btn btn-primary fa-pull-right" />
+				</div>
+		</form>
+	</div>
+</div>
+<br />
+<br />
+<div class="row justify-content-md-center">
+	<div class="col-6">
+		<label>Escriba el Nombre de la Placa</label>
+
+		<div class="input-group mb-3">
+		  <input type="text" id="Placa" required class="form-control" aria-label="Default">
+		</div>
+
+	</div>
+	<div class="col-6">
+		<input type="submit" value="Buscar" class="btn btn-primary fa-pull-right" onclick="Buscar();" />
+	</div>
+</div>
+<br />
+<br />
+
+<script src="~/js/site.js"></script>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<script>
+	function Buscar()
+	{
+		var placaVehiculo=document.getElementById("Placa").value;
+		if(placaVehiculo==null||placaVehiculo=="")
+		{
+			alert("Debe indicar el nombre de la placa");
+		}
+		else{
+			//$.ajax({
+			//	type: 'GET',
+			//	//data: { placa: placaVehiculo},
+			//	url: 'Cita/GetCitasByPlaca?placa='+placaVehiculo,
+			//	contentType: 'application/html; charset=utf-8',
+			//	dataType: 'html',
+			//	success: function (result) {
+			//		$('#CitasDePlaca').load(result);
+			//	}
+			//});
+			window.open('Cita/GetCitasByPlaca?placa='+placaVehiculo);
+		}
+	}
+</script>

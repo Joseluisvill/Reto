@@ -1,7 +1,15 @@
+using Reto.Utils;
+using Reto.Web.Interfaces;
+using Reto.Web.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<ICitaService, CitaService>();
+builder.Services.AddScoped<IWebClient, WebClient>();
+builder.Services.AddScoped<IVehiculoService, VehiculoService>();
 
 var app = builder.Build();
 

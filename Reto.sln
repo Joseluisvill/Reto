@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reto.API", "Reto.API\Reto.API.csproj", "{C7C454C2-F2A3-42B8-B91B-3738F4ED8AD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reto.API", "Reto.API\Reto.API.csproj", "{C7C454C2-F2A3-42B8-B91B-3738F4ED8AD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reto.Web", "Reto.Web\Reto.Web.csproj", "{D905A025-E4E7-4245-9C26-05B1F0A3D2A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reto.Web", "Reto.Web\Reto.Web.csproj", "{D905A025-E4E7-4245-9C26-05B1F0A3D2A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reto.Services", "Reto.Services\Reto.Services.csproj", "{B42C4DA0-F2B5-4C7F-8145-CAC16868CFA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reto.Data", "Reto.Data\Reto.Data.csproj", "{0512DC3D-2FE6-4E3F-B60E-541A97D5DFB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reto.Utils", "Reto.Utils\Reto.Utils.csproj", "{E2A430F0-DD7C-41F9-A96D-532193517FAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{D905A025-E4E7-4245-9C26-05B1F0A3D2A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D905A025-E4E7-4245-9C26-05B1F0A3D2A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D905A025-E4E7-4245-9C26-05B1F0A3D2A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B42C4DA0-F2B5-4C7F-8145-CAC16868CFA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B42C4DA0-F2B5-4C7F-8145-CAC16868CFA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B42C4DA0-F2B5-4C7F-8145-CAC16868CFA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B42C4DA0-F2B5-4C7F-8145-CAC16868CFA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0512DC3D-2FE6-4E3F-B60E-541A97D5DFB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0512DC3D-2FE6-4E3F-B60E-541A97D5DFB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0512DC3D-2FE6-4E3F-B60E-541A97D5DFB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0512DC3D-2FE6-4E3F-B60E-541A97D5DFB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2A430F0-DD7C-41F9-A96D-532193517FAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2A430F0-DD7C-41F9-A96D-532193517FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2A430F0-DD7C-41F9-A96D-532193517FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2A430F0-DD7C-41F9-A96D-532193517FAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
