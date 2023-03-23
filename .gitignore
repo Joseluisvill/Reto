@@ -5,3 +5,11 @@
 /.vs
 /Reto.API/obj
 /Reto.Web/obj
+/Reto.API/bin/Debug/net6.0
+/Reto.Data/bin/Debug/net6.0
+/Reto.Data/obj
+/Reto.Services/bin/Debug/net6.0
+/Reto.Services/obj
+/Reto.Utils/bin/Debug/net6.0
+/Reto.Utils/obj
+/Reto.Web/bin/Debug/net6.0
